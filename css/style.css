@@ -100,6 +100,26 @@ img {
     color: #1d4ed8;
 }
 
+
+/* Light Mode (default) */
+
+.about-text {
+    color: #000000;
+    /* black */
+}
+
+
+/* Dark Mode */
+
+body.dark .about-title {
+    color: #ffffff;
+}
+
+body.dark .about-text {
+    color: #ffffff;
+    /* white */
+}
+
 .about-text {
     color: #333;
 }
@@ -116,6 +136,10 @@ img {
     font-size: 48px;
     font-weight: 800;
     color: #1d4ed8;
+}
+
+body.dark .service-title {
+    color: #ffffff;
 }
 
 .service-card {
@@ -139,11 +163,16 @@ img {
 
 /* --- TEAM SECTION --- */
 
+
+/* TEAM SECTION */
+
 .team-section {
-    background: linear-gradient(135deg, #7a7b7d, #dbdddf);
-    color: #1d0c0c;
+    background: #f8fafc;
     padding: 60px 0;
 }
+
+
+/* CARD */
 
 .team-card {
     background: #ffffff;
@@ -151,13 +180,20 @@ img {
     padding: 30px;
     border-radius: 20px;
     text-align: center;
-    transition: 0.4s;
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
+
+/* HOVER LIGHT MODE */
+
 .team-card:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
 }
+
+
+/* IMAGE */
 
 .team-img {
     width: 130px;
@@ -168,12 +204,6 @@ img {
     border: 5px solid #0d6efd;
     margin-bottom: 15px;
     transition: 0.4s;
-}
-
-.team-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .team-card:hover .team-img {
@@ -188,10 +218,37 @@ img {
 }
 
 
+/* ================= DARK MODE ================= */
+
+body.dark .team-section {
+    background: #121212;
+}
+
+body.dark .team-card {
+    background: #1e1e1e;
+    color: #ffffff;
+    /* normal state */
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.05);
+}
+
+body.dark .team-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    /* white animated glow */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 255, 255, 0.2), 0 25px 60px rgba(0, 0, 0, 0.9);
+}
+
+body.dark .team-title {
+    color: #ffffff;
+}
+
+
 /* --- WHY SECTION --- */
 
+body.dark .why-section {
+    background: #222d3e !important;
+}
+
 .why-section {
-    padding: 80px 0;
     background: #ffffff;
 }
 
@@ -199,6 +256,10 @@ img {
     font-size: 36px;
     font-weight: 800;
     color: #1d4ed8;
+}
+
+body.dark .why-title {
+    color: #ffffff;
 }
 
 .why-box {
@@ -229,6 +290,10 @@ img {
 .why-box p {
     font-size: 15px;
     color: #64748b;
+}
+
+body.dark .why-box p {
+    color: #ffffff !important;
 }
 
 
@@ -272,16 +337,22 @@ img {
 
 /* --- CONTACT BUTTONS --- */
 
+
+/* CONTACT BUTTONS */
+
 .contact-buttons {
     position: fixed;
     right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 60px;
+    /* niche position */
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
     z-index: 999;
 }
+
+
+/* COMMON BUTTON STYLE */
 
 .whatsapp-btn,
 .sms-btn {
@@ -294,19 +365,34 @@ img {
     justify-content: center;
     font-size: 24px;
     text-decoration: none;
+    transition: 0.3s;
 }
+
+
+/* WHATSAPP */
 
 .whatsapp-btn {
     background: #25D366;
     animation: bounce 2s infinite;
 }
 
+
+/* SMS */
+
 .sms-btn {
     background: #007bff;
 }
 
 
-/* --- ANIMATION --- */
+/* HOVER EFFECT */
+
+.whatsapp-btn:hover,
+.sms-btn:hover {
+    transform: scale(1.1);
+}
+
+
+/* BOUNCE ANIMATION */
 
 @keyframes bounce {
     0%,
@@ -371,4 +457,8 @@ body.dark .why-box {
     .service-img {
         height: 180px;
     }
+}
+
+html {
+    scroll-behavior: smooth;
 }
