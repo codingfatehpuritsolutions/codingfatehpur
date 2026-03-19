@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coding Fatehpur</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container-fluid align-items-center">
+
+
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.jpg" alt="Coding Fatehpur IT Solution Logo" style="height: 50px; width: auto;" class="d-inline-block align-top">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end gap-3 pe-4" id="mainMenu">
+
+                <ul class="navbar-nav gap-4 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Our Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+
+                <button class="btn btn-light rounded-circle shadow-sm" id="themeToggle">
+                    🌙
+                </button>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- IMAGE SLIDER -->
+    <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="images/aimage1.avif" class="d-block w-100 carousel-img" alt="Slide 1">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/image2.jpg" class="d-block w-100 carousel-img" alt="Slide 2">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/image3.webp" class="d-block w-100 carousel-img" alt="Slide 3">
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+    <!-- ABOUT US -->
+    <section id="about">
+
+        <section class="about-section py-5">
+            <div class="container">
+
+                <!-- TOP HEADING -->
+                <div class="text-center mb-5">
+                    <h2 class="about-title">About Us</h2>
+
+                </div>
+
+                <!-- CONTENT ROW -->
+                <div class="row align-items-center g-5">
+
+                    <!-- LEFT SIDE IMAGE -->
+                    <div class="col-md-6 text-center">
+                        <img src="images/aboutus.jpg" class="img-fluid about-img rounded shadow" alt="About Coding Fatehpur">
+                    </div>
+
+                    <!-- RIGHT SIDE TEXT -->
+                    <div class="col-md-6">
+                        <p class="about-text">
+                            <strong>Coding Fatehpur IT Solution</strong> is a professional IT services company dedicated to providing high-quality digital solutions for businesses, startups, and individuals.
+                        </p>
+
+                        <p class="about-text">
+                            We specialize in Website Development, Android App Development, Custom Software Solutions, and Digital Marketing services. Our goal is to help businesses grow online with modern, secure, and scalable technology.
+                        </p>
+
+                        <p class="about-text">
+                            At Coding Fatehpur, we believe in innovation, quality work, and complete customer satisfaction.
+                        </p>
+
+                        <a href="#" class="btn btn-primary mt-3 px-4">Contact Us</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <!--our service-->
+    <section id="services">
+        <section class="services-section py-5">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <h2 class="service-title">Our Services</h2>
+                    <p class="text-muted">
+                        Complete digital solutions for your business growth.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- 1 -->
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="service-card">
+                            <img src="images/webdev" class="service-img" alt="">
+                            <div class="p-4 text-center">
+                                <h5>Website Development</h5>
+                                <p>Modern, responsive and professional websites.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="service-card">
+                            <img src="images/Appdev.png" class="service-img" alt="">
+                            <div class="p-4 text-center">
+                                <h5>Android App Development</h5>
+                                <p>High performance mobile applications.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="service-card">
+                            <img src="images/digital" class="service-img" alt="">
+                            <div class="p-4 text-center">
+                                <h5>Digital Marketing</h5>
+                                <p>SEO and branding strategies for growth.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="service-card">
+                            <img src="images/soft" class="service-img" alt="">
+                            <div class="p-4 text-center">
+                                <h5>Custom Software</h5>
+                                <p>Tailor-made business management solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="service-card">
+                            <img src="images/Webhot.webp" class="service-img" alt="">
+                            <div class="p-4 text-center">
+                                <h5>Web Hosting</h5>
+                                <p>Fast, secure and reliable hosting services.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="service-card">
+                            <img src="images/ithot" class="service-img" alt="">
+                            <div class="p-4 text-center">
+                                <h5>IT Consulting</h5>
+                                <p>Expert advice for smart technology decisions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <section class="team-section py-5">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h2 class="team-title">Our Team</h2>
+                <p class="team-subtitle">Meet Our Professional Experts</p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img src="images/image.png" class="img-fluid" alt="Sujeet Kumar">
+                        </div>
+                        <h5>Sujeet Kumar</h5>
+                        <span>Full Stack Developer & Founder</span>
+                        <p>Expert in Flutter, Firebase & MERN Stack Development</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img src="images/shivani.jpeg" class="img-fluid" alt="Shivani Sahu">
+                        </div>
+                        <h5>Shivani Sahu</h5>
+                        <span>HR Manager</span>
+                        <p>Responsible for recruitment, employee relations, and building a positive work culture.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img src="images/manjit.jpg" class="img-fluid" alt="Manjeet Kumar">
+                        </div>
+                        <h5>Manjeet Kumar</h5>
+                        <span>Web & Software Developer</span>
+                        <p>Expert in web development, software solutions, and modern UI/UX design.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="why-section py-5 bg-light">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h2 class="why-title">Why Choose Us</h2>
+                <p class="text-muted">We Provide Best IT Solutions For Your Business</p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-3">
+                    <div class="why-box">
+                        <i class="fas fa-laptop-code"></i>
+                        <h5>Expert Developers</h5>
+                        <p>Skilled team with modern technology knowledge.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="why-box">
+                        <i class="fas fa-clock"></i>
+                        <h5>On-Time Delivery</h5>
+                        <p>We deliver projects within committed deadlines.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="why-box">
+                        <i class="fas fa-headset"></i>
+                        <h5>24/7 Support</h5>
+                        <p>Always ready to help our clients anytime.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="why-box">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <h5>Affordable Pricing</h5>
+                        <p>Best quality services at reasonable cost.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <section class="counter-section py-5">
+            <div class="container">
+                <div class="row text-center">
+
+                    <div class="col-md-3">
+                        <div class="counter-box">
+                            <h2 class="counter" data-target="150" data-speed="1500">0</h2>
+                            <p>Projects Completed</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="counter-box">
+                            <h2 class="counter" data-target="120" data-speed="2000">0</h2>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="counter-box">
+                            <h2 class="counter" data-target="5" data-speed="2500">0</h2>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="counter-box">
+                            <h2 class="counter" data-target="50" data-speed="3000">0</h2>
+                            <p>Ongoing Projects</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <script>
+            const counters = document.querySelectorAll('.counter');
+
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const speed = +counter.getAttribute('data-speed');
+                const increment = target / (speed / 20);
+
+                let count = 0;
+
+                const updateCount = () => {
+                    count += increment;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count);
+                        setTimeout(updateCount, 20);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+
+                updateCount();
+            });
+        </script>
+
+
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Company Info -->
+                    <div class="col-md-4">
+                        <h5>Coding Fatehpur IT Solutions</h5>
+                        <p>We provide modern IT solutions including Website, App & Software Development services.</p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-md-2">
+                        <h6>Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="col-md-3">
+                        <h6>Our Services</h6>
+                        <ul class="footer-links">
+                            <li>Website Development</li>
+                            <li>App Development</li>
+                            <li>Custom Software</li>
+                            <li>Digital Marketing</li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="col-md-3">
+                        <h6>Contact Us</h6>
+                        <p>📍 Lucknow, Uttar Pradesh</p>
+                        <p>📞 +91 7755897558</p>
+                        <p>📧 codingfatehpur@gmail.com</p>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div class="text-center">
+                    <p>© 2026 Coding Fatehpur IT Solutions | All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!-- Contact Buttons -->
+    <div class="contact-buttons">
+
+        <a href="https://wa.me/917755897558?text=Hello Coding Fatehpur, I want enquiry" class="whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <a href="sms:7755897558?body=Hello Coding Fatehpur, I want enquiry" class="sms-btn">
+            <i class="fas fa-sms"></i>
+        </a>
+
+    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <script>
+        // Saare links ko select karein
+        const links = document.querySelectorAll('.nav-link');
+
+        links.forEach(link => {
+            link.addEventListener('click', function() {
+                // 1. Sabse pehle 'active' class remove karein
+                links.forEach(l => l.classList.remove('active'));
+
+                // 2. Click kiye gaye link par 'active' class add karein
+                this.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

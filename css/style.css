@@ -1,0 +1,374 @@
+/* --- GENERAL --- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background 0.3s, color 0.3s;
+    overflow-x: hidden;
+    /* 🔥 scroll fix */
+}
+
+html {
+    scroll-behavior: smooth;
+    /* smooth scroll */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* --- NAVBAR --- */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.menu-box {
+    background: #f8fafc;
+    border-radius: 50px;
+}
+
+
+/* --- NAVBAR LINK ANIMATION --- */
+
+.nav-link {
+    position: relative;
+    color: #333 !important;
+    font-weight: 500;
+    transition: 0.3s ease;
+    padding: 5px 0;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -2px;
+    left: 0;
+    background-color: #1d4ed8;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    color: #1d4ed8 !important;
+    font-weight: 700 !important;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+
+/* --- IMAGE SLIDER --- */
+
+.carousel-img {
+    height: 85vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+/* --- ABOUT SECTION --- */
+
+.about-section {
+    padding: 60px 0;
+    background: #ffffff;
+}
+
+.about-title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #1d4ed8;
+}
+
+.about-text {
+    color: #333;
+}
+
+
+/* --- SERVICES SECTION --- */
+
+.services-section {
+    background: #f8fafc;
+    padding: 60px 0;
+}
+
+.service-title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #1d4ed8;
+}
+
+.service-card {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+/* --- TEAM SECTION --- */
+
+.team-section {
+    background: linear-gradient(135deg, #7a7b7d, #dbdddf);
+    color: #1d0c0c;
+    padding: 60px 0;
+}
+
+.team-card {
+    background: #ffffff;
+    color: #333;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.team-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.team-img {
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #0d6efd;
+    margin-bottom: 15px;
+    transition: 0.4s;
+}
+
+.team-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-card:hover .team-img {
+    transform: scale(1.1);
+    border-color: #6610f2;
+}
+
+.team-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1d4ed8;
+}
+
+
+/* --- WHY SECTION --- */
+
+.why-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.why-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1d4ed8;
+}
+
+.why-box {
+    background: #ffffff;
+    padding: 40px 25px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.4s;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.why-box:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(13, 110, 253, 0.15);
+}
+
+.why-box i {
+    font-size: 50px;
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
+
+.why-box h5 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.why-box p {
+    font-size: 15px;
+    color: #64748b;
+}
+
+
+/* --- COUNTER SECTION --- */
+
+.counter-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    color: #fff;
+    text-align: center;
+}
+
+.counter-box h2 {
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.counter-box:hover h2 {
+    transform: scale(1.1);
+}
+
+
+/* --- FOOTER --- */
+
+.footer-section {
+    background: #111;
+    color: #fff;
+    padding: 60px 0 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+
+/* --- CONTACT BUTTONS --- */
+
+.contact-buttons {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 999;
+}
+
+.whatsapp-btn,
+.sms-btn {
+    width: 55px;
+    height: 55px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.whatsapp-btn {
+    background: #25D366;
+    animation: bounce 2s infinite;
+}
+
+.sms-btn {
+    background: #007bff;
+}
+
+
+/* --- ANIMATION --- */
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* --- DARK MODE --- */
+
+body.dark {
+    background: #0f172a;
+    color: #ffffff;
+}
+
+body.dark .navbar {
+    background: #1e293b;
+}
+
+body.dark .nav-link {
+    color: #e5e7eb !important;
+}
+
+body.dark .nav-link::after {
+    background-color: #60a5fa;
+}
+
+body.dark .about-section,
+body.dark .why-section {
+    background: #0f172a;
+}
+
+body.dark .services-section,
+body.dark .team-section,
+body.dark .counter-section {
+    background: #1e293b;
+}
+
+body.dark .service-card,
+body.dark .team-card,
+body.dark .why-box {
+    background: #334155;
+    color: #fff;
+}
+
+
+/* --- RESPONSIVE --- */
+
+@media (max-width: 768px) {
+    .carousel-img {
+        height: 40vh;
+    }
+    .about-title,
+    .service-title {
+        font-size: 28px;
+        text-align: center;
+    }
+    .service-img {
+        height: 180px;
+    }
+}
